@@ -13,6 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <h1>Welcome to Felipes Site!</h1>
         <ol>
           <li>
             Get started by editing <code>src/app/page.js</code>.
