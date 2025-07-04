@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main>
-      <article className={styles.page}>
+      <article>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -14,10 +15,18 @@ export default function Home() {
           priority
         />
         <h1 className={styles.header}>Welcome to Felipes Site!</h1>
-        <p className={styles.pageLink}>About</p>
-        <p className={styles.pageLink}>Tattooing</p>
-        <p className={styles.pageLink}>Sketchbook</p>
-        <p className={styles.pageLink}>Store</p>
+        <Link href="/about">
+          <p className={styles.pageLink}>About</p>
+        </Link>
+        <Link href="/tattooing">
+          <p className={styles.pageLink}>Tattooing</p>
+        </Link>
+        <Link href="/sketchbook">
+          <p className={styles.pageLink}>Sketchbook</p>
+        </Link>
+        <Link href="/store">
+          <p className={styles.pageLink}>Store</p>
+        </Link>
       </article>
     </main>
   );
