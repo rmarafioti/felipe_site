@@ -28,6 +28,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0px solid red;
 }
 
 main {
@@ -58,6 +59,12 @@ main {
     --button-secondary-hover: #1a1a1a;
   }
 }
+ nav {
+  display:flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 0rem 2rem;
+ }
+
 
 h1 {
   font-size: 60px;
@@ -71,6 +78,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+ @media (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+  main {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  h1 {
+    font-size: 30px;
+  }
+ }
 
 @media (prefers-color-scheme: dark) {
   html {
