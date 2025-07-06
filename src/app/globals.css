@@ -1,9 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0px solid red;
+}
+
 :root {
+  /* using  starter alias colors for now, add custom ones here*/
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
+  /* add global dark mode styling here*/
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -22,23 +31,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0px solid red;
+  font-size: 1rem;
 }
 
 main {
-    --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,29 +46,18 @@ main {
   font-family: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  main {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
  nav {
   display:flex;
   justify-content: space-between;
   margin: 2rem 2rem 0rem 2rem;
  }
 
-
 h1 {
-  font-size: 60px;
+  font-size: 3em;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 a {
@@ -80,6 +66,7 @@ a {
 }
 
  @media (max-width: 1300px) {
+  /* add global; breakpoint syling here*/
   nav {
     display: none;
   }
@@ -87,7 +74,7 @@ a {
     margin: 0rem 1rem 0rem 1rem;
   }
   h1 {
-    font-size: 30px;
+    font-size: 2em;
   }
  }
 
