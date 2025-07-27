@@ -5,14 +5,14 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main>
-      {/*<Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />*/}
+      <Image
+        className={styles.logo}
+        src="https://picsum.photos/id/237/200/300"
+        alt="imageplaceholder"
+        width={400}
+        height={200}
+        priority
+      />
       <h1 className={styles.header}>Welcome to Felipes Site!</h1>
       <Link href="/about" className={styles.pageLink}>
         About
