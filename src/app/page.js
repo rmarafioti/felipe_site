@@ -14,17 +14,17 @@ export default function Home() {
           priority
         />*/}
       <h1 className={styles.header}>Welcome to Felipes Site!</h1>
-      <Link href="/about">
-        <p className={styles.pageLink}>About</p>
+      <Link href="/about" className={styles.pageLink}>
+        About
       </Link>
-      <Link href="/tattooing">
-        <p className={styles.pageLink}>Tattooing</p>
+      <Link href="/tattooing" className={styles.pageLink}>
+        Tattooing
       </Link>
-      <Link href="/sketchbook">
-        <p className={styles.pageLink}>Sketchbook</p>
+      <Link href="/sketchbook" className={styles.pageLink}>
+        Sketchbook
       </Link>
-      <Link href="/store">
-        <p className={styles.pageLink}>Store</p>
+      <Link href="/store" className={styles.pageLink}>
+        Store
       </Link>
     </main>
   );
