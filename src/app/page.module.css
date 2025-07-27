@@ -2,13 +2,16 @@
   padding: 2rem 0rem 2rem 0rem;
 }
 
+.logo {
+  height: auto;
+}
+
 .pageLink {
   font-weight: bold;
   background-color: rgb(236, 235, 235);
   text-align: center;
   padding: 2rem;
   margin-bottom: 2rem;
-  cursor: pointer;
 }
 
 .pageLink:hover {
@@ -22,8 +25,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}

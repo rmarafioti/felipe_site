@@ -20,20 +20,20 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <Link href="/about">
-          <p className={styles.pageLink}>About</p>
+        <Link href="/about" className={styles.pageLink}>
+          About
         </Link>
-        <Link href="/tattooing">
-          <p className={styles.pageLink}>Tattooing</p>
+        <Link href="/tattooing" className={styles.pageLink}>
+          Tattooing
         </Link>
-        <Link href="/">
-          <p className={styles.pageLink}>Home</p>
+        <Link href="/" className={styles.pageLink}>
+          Home
         </Link>
-        <Link href="/sketchbook">
-          <p className={styles.pageLink}>Sketchbook</p>
+        <Link href="/sketchbook" className={styles.pageLink}>
+          Sketchbook
         </Link>
-        <Link href="/store">
-          <p className={styles.pageLink}>Store</p>
+        <Link href="/store" className={styles.pageLink}>
+          Store
         </Link>
       </nav>
 
@@ -54,38 +54,28 @@ export default function Navbar() {
         aria-label="Mobile Navigation"
       >
         <div>
-          <Link href="/">
-            <p className={styles.pageLink} role="heading">
-              Home
-            </p>
+          <Link href="/" role="heading" className={styles.pageLink}>
+            Home
           </Link>
         </div>
         <div>
-          <Link href="/about">
-            <p className={styles.pageLink} role="heading">
-              About
-            </p>
+          <Link href="/about" role="heading" className={styles.pageLink}>
+            About
           </Link>
         </div>
         <div>
-          <Link href="/tattooing">
-            <p className={styles.pageLink} role="heading">
-              Tattooing
-            </p>
+          <Link href="/tattooing" role="heading" className={styles.pageLink}>
+            Tattooing
           </Link>
         </div>
         <div>
-          <Link href="/sketchbook">
-            <p className={styles.pageLink} role="heading">
-              Sketchbook
-            </p>
+          <Link href="/sketchbook" role="heading" className={styles.pageLink}>
+            Sketchbook
           </Link>
         </div>
         <div>
-          <Link href="/store">
-            <p className={styles.pageLink} role="heading">
-              Store
-            </p>
+          <Link href="/store" role="heading" className={styles.pageLink}>
+            Store
           </Link>
         </div>
       </menu>
